@@ -1,0 +1,149 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.trendings {
+  display: flex;
+  flex-direction: column;
+}
+.trending_title,
+.recomended_title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  /* Pure White */
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.trending_item_card {
+  width: 470px;
+  height: 230px;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  border-radius: 0px 0px 8px 8px;
+}
+.add {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 1000;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #10141e;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.add:hover {
+  background-color: #fff;
+}
+
+.add:hover img {
+  filter: invert(10) sepia(10);
+}
+
+.trending_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  border-radius: 0px 0px 8px 8px;
+}
+.trending_card_info {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  z-index: 100000000000;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.info,
+.info span {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Pure White */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+.trending_name {
+  /* Heading (S) */
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+
+  /* Pure White */
+
+  color: #ffffff;
+}
+.splide {
+  margin: 15px 0;
+  padding: 0 !important;
+}
+
+.recomended_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .recomended_list {
+    flex-wrap: wrap !important;
+    display: flex;
+    height: auto;
+  }
+  .trending_item_card {
+    width: 470px;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .recomended_title {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.3125px;
+    /* Pure White */
+    color: #ffffff;
+  }
+  .trending_item_card {
+    width: 240px;
+    height: 140px;
+  }
+}

@@ -1,0 +1,124 @@
+.recomended_item_card {
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+}
+
+.item_img {
+  width: 280px;
+  height: 174px;
+  border-radius: 8px;
+}
+.item_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.item_info {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.item_info,
+.item_info span {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* Pure White */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.movie_icon {
+  margin-right: 5px;
+}
+
+.name {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  /* Pure White */
+  color: #ffffff;
+}
+
+.add {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  background: #10141e;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.add:hover {
+  background-color: #fff;
+}
+
+.add:hover img {
+  filter: invert(10) sepia(10);
+}
+
+@media screen and (max-width: 768px) {
+  .item_img {
+    width: 220px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .item_img {
+    width: 164px;
+    height: 110px;
+  }
+  .name {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+    /* Pure White */
+    color: #ffffff;
+  }
+  .item_info span {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 14px;
+    /* identical to box height */
+    /* Pure White */
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+  }
+  .item_info {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 14px;
+    /* identical to box height */
+    /* Pure White */
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+  }
+}

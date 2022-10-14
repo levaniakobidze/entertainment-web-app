@@ -1,0 +1,14 @@
+.movies {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .movies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

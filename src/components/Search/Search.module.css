@@ -1,0 +1,63 @@
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form input {
+  flex: 0.98;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  height: 47px;
+  border-bottom: 2px solid var(--dark-blue);
+  transition: all 0.3s;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  /* Pure White */
+  color: #ffffff;
+  padding: 30px 0;
+}
+.form input::placeholder {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  /* Pure White */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.form input:focus {
+  border-bottom: 2px solid #5a698f;
+}
+
+@media screen and (max-width: 425px) {
+  .form input {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    /* Pure White */
+    color: #ffffff;
+  }
+  .form input::placeholder {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Pure White */
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}

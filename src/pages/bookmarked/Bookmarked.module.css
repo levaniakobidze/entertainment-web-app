@@ -1,0 +1,47 @@
+.bookmarks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.movie_bookmarks {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.movie_bookmarks_title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  /* Pure White */
+  color: #ffffff;
+}
+.movie_bookmarks_list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.no_bookmarks {
+  color: #3a3d42;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 425px) {
+  .movie_bookmarks_title {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.3125px;
+    /* Pure White */
+    color: #ffffff;
+  }
+}
