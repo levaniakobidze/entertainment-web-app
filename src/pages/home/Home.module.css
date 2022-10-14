@@ -32,6 +32,30 @@
     rgba(0, 0, 0, 0.75) 100%
   );
   border-radius: 0px 0px 8px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.trending_item_card:hover .play_cont {
+  opacity: 0.25;
+}
+.play_cont {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0;
+  border-radius: 28.5px;
+  width: 117px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-left: 10px;
 }
 .add {
   position: absolute;
@@ -117,7 +141,7 @@
 .recomended_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -125,12 +149,20 @@
     flex-wrap: wrap !important;
     display: flex;
     height: auto;
+    justify-content: center;
   }
   .trending_item_card {
     width: 470px;
     height: 230px;
   }
 }
+@media screen and (max-width: 549px) {
+  .trending_item_card {
+    width: 380px;
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .recomended_title {
     font-family: "Outfit";
@@ -145,5 +177,15 @@
   .trending_item_card {
     width: 240px;
     height: 140px;
+  }
+  .trending_title {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.3125px;
+    /* Pure White */
+    color: #ffffff;
   }
 }

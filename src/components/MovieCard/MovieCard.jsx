@@ -28,7 +28,6 @@ function MovieCard({ ...item }) {
           console.log(movie.id, item.id);
           if (movie.id == item.id) {
             movie.bookmarked = !movie.bookmarked;
-            console.log("ok");
           }
           return movie;
         })
@@ -79,6 +78,23 @@ function MovieCard({ ...item }) {
 
   return (
     <div className={classes.recomended_item_card}>
+      <div className={classes.play_cont}>
+        <svg
+          width='30'
+          height='30'
+          viewBox='0 0 30 30'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'>
+          <path
+            fill-rule='evenodd'
+            clip-rule='evenodd'
+            d='M0 15C0 6.7125 6.7125 0 15 0C23.2875 0 30 6.7125 30 15C30 23.2875 23.2875 30 15 30C6.7125 30 0 23.2875 0 15ZM21 14.5L12 8V21L21 14.5Z'
+            fill='black'
+          />
+        </svg>
+
+        <span className={classes.play}>Play</span>
+      </div>
       <div className={classes.add} onClick={() => addToBookmarks(item)}>
         <img src={!item.bookmarked ? bookmark : bookmarked} alt='icon2' />
       </div>

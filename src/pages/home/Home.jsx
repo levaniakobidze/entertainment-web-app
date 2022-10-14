@@ -79,22 +79,33 @@ function Home() {
           options={{
             rewind: true,
             width: "100%",
-            gap: "-185px",
+            gap: "10px",
             perPage: 2,
             focus: "left",
             arrows: false,
             pagination: false,
             trimSpace: true,
+            autoWidth: true,
             breakpoints: {
               768: {
                 perPage: 1,
-                gap: "-7rem",
+                gap: "10px",
+
+                width: "100%",
+              },
+              569: {
+                perPage: 1,
+                gap: "10px",
 
                 width: "100%",
               },
               425: {
-                perPage: 1,
-                gap: "-75px",
+                perPage: 1.5,
+                gap: "10px",
+              },
+              400: {
+                perPage: 1.2,
+                gap: "5px",
               },
             },
           }}>
@@ -102,6 +113,23 @@ function Home() {
             return (
               <SplideSlide key={index}>
                 <div className={classes.trending_item_card}>
+                  <div className={classes.play_cont}>
+                    <svg
+                      width='30'
+                      height='30'
+                      viewBox='0 0 30 30'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'>
+                      <path
+                        fill-rule='evenodd'
+                        clip-rule='evenodd'
+                        d='M0 15C0 6.7125 6.7125 0 15 0C23.2875 0 30 6.7125 30 15C30 23.2875 23.2875 30 15 30C6.7125 30 0 23.2875 0 15ZM21 14.5L12 8V21L21 14.5Z'
+                        fill='black'
+                      />
+                    </svg>
+
+                    <span className={classes.play}>Play</span>
+                  </div>
                   <div className={classes.trending_card_info}>
                     <div className={classes.info}>
                       <span>{item.year}</span>

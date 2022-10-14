@@ -9,7 +9,7 @@
   width: 1200px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1268px) {
   .app_container {
     flex-direction: column;
     justify-content: top;
@@ -18,7 +18,6 @@
   }
   .list {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 0 15px;

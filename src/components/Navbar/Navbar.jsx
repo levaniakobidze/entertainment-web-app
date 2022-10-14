@@ -15,9 +15,12 @@ function Navbar() {
   return (
     <nav className={classes.navbar}>
       <div className={classes.logo_and_menu}>
-        <div className={classes.logo}>
+        <Link
+          to='/'
+          className={classes.logo}
+          onClick={() => setActivePage("home")}>
           <img src={logo} alt='logo' />
-        </div>
+        </Link>
 
         <ul className={classes.nav_menu}>
           <li onClick={() => handleActivePage("home")}>
